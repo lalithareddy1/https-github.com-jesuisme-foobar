@@ -3,7 +3,7 @@ import csv
 from math import sqrt
 
 
-class ChildFoo(foobar.FoobarClass):
+class ChildClass(foobar.FoobarClass):
 
     def __init__(self, file_read):
         self.students = []
@@ -128,7 +128,7 @@ class ChildFoo(foobar.FoobarClass):
                 for i in range(wanted_parts)]
 
 file_read = open("student_responses.csv", "r")
-child = ChildFoo(file_read)
+child = ChildClass(file_read)
 
 child.read()
 child.compute_score()
